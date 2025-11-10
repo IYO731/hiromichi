@@ -3,9 +3,25 @@ layout: default
 ---
 
 # 草野弘道FP｜現状把握フローチャート
-
+<style>
+.mermaid {
+  max-width: 1200px;       /* 表示幅を広げたい場合はここを調整 */
+  margin: 0 auto;
+}
+.mermaid svg {
+  width: 100%;
+  height: auto;
+}
+</style>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true });</script>
+<script>
+mermaid.initialize({
+  startOnLoad: true,
+  theme: "default",
+  themeVariables: { fontSize: "18px" },      // ノード内文字を大きく
+  flowchart: { useMaxWidth: false, nodeSpacing: 70, rankSpacing: 60 }
+});
+</script>
 
 ## フローチャート（イエス・ノーで進む）
 
